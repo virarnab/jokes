@@ -1,0 +1,148 @@
+body{
+  margin:0;
+}
+#navbar{
+display:flex;
+justify-content:space-evenly;
+align-items:stretch;
+}
+a{
+  text-decoration: none;
+}
+.nav0{
+flex-grow: 1;
+text-align: center;
+font-size: 1.5rem;
+color: #fff;
+font-weight: bolder;
+}
+.nav1{
+align-self: center;
+text-align: right;
+flex-grow: 4;
+}
+.nav1 a {
+  margin: 0 0.5rem;
+  font-size: 0.7rem;
+  text-transform: capitalize;
+  color: #fff;
+  font-weight: bolder;
+}
+.nav-toggle{
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    color:rgba(250,237,56,1);
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+  }
+  #navdurga{
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    height:100vh;
+
+  }
+.durgaImg{
+  text-align: center;
+}
+.durgaImg1{
+  width:95%;
+  padding-top: 20%;
+}
+/* sidebar */
+
+.quizIntro{
+  text-align: center;
+  color:#fff;
+  position:fixed;
+  top:0;
+  right:0;
+  width: 100%;
+  height:100%;
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,37,174,1) 0%, rgba(241,147,55,1) 53.4%, rgba(250,237,56,1) 99.5% );
+  /* transform: translate(-100%); */
+  transform:scale(0);
+}
+.show-quizIntro{
+  transform: translate(0);
+}
+
+.close{
+  display: flex;
+  justify-content: flex-end;
+}
+.close-btn{
+  font-size: 1.5rem;
+  line-height: 1;
+  color: rgba(250,237,56,1);
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  margin:0.5rem 0.5rem;
+}
+.fontawesome{
+  font-size: 1.3rem;
+  line-height: 0.5;
+  padding: 20px 20px;
+}
+.fontawesome:hover{
+  /* background-image: linear-gradient( 135deg, #FDEB71 10%, #F8D800 100%); */
+color: #FDEB71;
+
+}
+h1{
+  margin: 0;
+  font-size:1rem;
+  line-height:0.5;
+}
+h2{
+  font-size:0.9rem;
+}
+h4{
+  font-size: 0.8rem;
+  line-height: 1;
+}
+.myButton{
+padding: 5px;
+margin:5px;
+background: rgba(255,37,174,1);
+color: #fff;
+}
+/* Design for Laptop */
+@media screen and (min-width: 676px) {
+  .quizIntro {
+    width: 30vw;
+  }
+  h1{
+    margin: 0;
+    font-size:2rem;
+    line-height: 0.5;
+  }
+  h2{
+    font-size: 2.5rem;
+  }
+  h4{
+    margin-top: 0;
+    font-size: 1.3rem;
+    line-height: 1;
+  }
+  .fontawesome{
+    font-size: 3rem;
+    line-height: 1;
+    padding: 20px 20px;
+  }
+  .durgaImg1{
+    padding-top: 0;
+    width:50%;
+  }
+  .addPadding{
+    padding-right: 400px;
+  }
+  #navdurga{
+    height:auto;}
+    .nav1 a {
+      font-size: 1rem;
+    }
+    .center{
+      width: 70vw;
+    }
+}
